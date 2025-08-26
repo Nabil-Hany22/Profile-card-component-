@@ -20,7 +20,7 @@ It includes a cool **light switch animation** that toggles the lamp on and off.
 
 ### 🎥 Animation Preview  
 <p align="center">
-  <img src="./preview/lamp_animation.gif" alt="Lamp Animation Preview" width="80%" />
+  <img src="./preview/lamp_animation.gif" alt="Lamp Animation Preview" width="50%" />
 </p>  
 
 ---
