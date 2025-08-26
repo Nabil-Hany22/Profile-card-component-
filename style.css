@@ -55,6 +55,7 @@ body{
     overflow: hidden;
     min-width: 35rem;
     background-color: #fff;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0 , 0.2);
 }
 
 .top{
@@ -111,6 +112,9 @@ body{
     height: 2rem;
 }
 
+#github{
+    filter: brightness(0) invert(0);
+}
 .username{
     font-size: 1.2rem;
     font-weight:600;
