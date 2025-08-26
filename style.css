@@ -48,6 +48,48 @@ body{
     background-size: 1.2rem 1.2rem;
 }
 
+.lights-control{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 2rem;
+}
+
+.lights-label{
+    width: 4.2rem;
+    height: 2.2rem;
+    border-radius: 1.5rem;
+    background-color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 0.3rem 0.4rem;
+}
+
+.lights-label::after{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.lights-input{
+    display: none;
+}
+
+.lights-input:checked + .lights-label{
+    background-color: #fff6f6;
+    /* box-shadow: 0 0 5rem rgba(85, 239, 2, 0.184); */
+}
+
+.lights-input:checked + .lights-label::after{
+    transform: translateX(2rem);
+    background-color: rgb(7, 187, 7);
+}
+
 .card{
     display: flex;
     flex-direction: column;
@@ -56,6 +98,40 @@ body{
     min-width: 35rem;
     background-color: #fff;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0 , 0.2);
+}
+.lights-title{
+font-size: 2rem;
+font-weight: 700;
+}
+
+.lights{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s;
+}
+.bulb-odd{
+    animation: party 0.5s infinite alternate;
+}
+
+.bulb-even{
+    animation: party 0.5s infinite alternate-reverse;
+}
+
+@keyframes party{
+    0%{
+        fill:#ff0000;
+    }
+    100%{
+        fill:#fff500;
+        
+    }
+}
+
+.container:has(.lights-input:checked) .lights{
+    opacity: 1;
+    visibility: visible;
 }
 
 .top{
