@@ -44,9 +44,8 @@ body{
     justify-content: center;
     min-height: 100vh;
     background-color: #e5e5f7;
-    opacity: 0.8;
     background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 1rem 1rem;
+    background-size: 1.2rem 1.2rem;
 }
 
 .card{
@@ -55,11 +54,36 @@ body{
     border-radius: 1rem;
     overflow: hidden;
     min-width: 35rem;
+    background-color: #fff;
 }
 
 .top{
     height: 10rem;
     background-color: #e5e5f7;
-    opacity: 0.8;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 12px ), repeating-linear-gradient( #444cf755, #444cf7 );
+    opacity: 0.9;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 13px ), repeating-linear-gradient( #444cf755, #444cf7 );
+}
+
+.middle{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -6rem;
+    z-index: 1;
+}
+
+.pic{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    /* border: 0.4rem solid #fff; */
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.position{
+    font-size: 1.6rem;
+    font-weight:600;
 }
